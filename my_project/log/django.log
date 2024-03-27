@@ -1,0 +1,21 @@
+INFO 2024-03-27 16:22:08,604 autoreload 7252 976 Watching for file changes with StatReloader
+INFO 2024-03-27 16:22:16,696 basehttp 7252 7568 "GET / HTTP/1.1" 200 173
+WARNING 2024-03-27 16:22:30,254 log 7252 3880 Not Found: /docs
+WARNING 2024-03-27 16:22:30,256 basehttp 7252 3880 "GET /docs HTTP/1.1" 404 2421
+WARNING 2024-03-27 16:22:31,172 log 7252 3880 Not Found: /about/
+WARNING 2024-03-27 16:22:31,185 basehttp 7252 3880 "GET /about/ HTTP/1.1" 404 2427
+INFO 2024-03-27 16:22:46,087 autoreload 7252 976 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\urls.py changed, reloading.
+INFO 2024-03-27 16:22:47,914 autoreload 3424 2852 Watching for file changes with StatReloader
+INFO 2024-03-27 16:22:52,741 basehttp 3424 8456 "GET /about/ HTTP/1.1" 200 162
+INFO 2024-03-27 16:23:21,799 autoreload 3424 2852 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-03-27 16:23:23,161 autoreload 7668 9700 Watching for file changes with StatReloader
+INFO 2024-03-27 16:23:25,941 basehttp 7668 6288 "GET /about/ HTTP/1.1" 200 164
+INFO 2024-03-27 16:23:58,004 autoreload 7668 9700 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-03-27 16:23:59,462 autoreload 9576 7396 Watching for file changes with StatReloader
+INFO 2024-03-27 16:24:01,236 basehttp 9576 5876 "GET /about/ HTTP/1.1" 200 164
+INFO 2024-03-27 16:25:31,609 autoreload 9576 7396 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-03-27 16:25:32,937 autoreload 9716 1908 Watching for file changes with StatReloader
+INFO 2024-03-27 16:26:28,547 autoreload 9716 1908 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-03-27 16:26:29,633 autoreload 5220 9408 Watching for file changes with StatReloader
+INFO 2024-03-27 16:26:34,945 basehttp 5220 1148 "GET /about/ HTTP/1.1" 200 2113
+INFO 2024-03-27 16:26:47,705 basehttp 5220 10476 "GET / HTTP/1.1" 200 1043
