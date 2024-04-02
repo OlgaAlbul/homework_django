@@ -19,3 +19,1078 @@ INFO 2024-03-27 16:26:28,547 autoreload 9716 1908 C:\Users\Lenovo\PycharmProject
 INFO 2024-03-27 16:26:29,633 autoreload 5220 9408 Watching for file changes with StatReloader
 INFO 2024-03-27 16:26:34,945 basehttp 5220 1148 "GET /about/ HTTP/1.1" 200 2113
 INFO 2024-03-27 16:26:47,705 basehttp 5220 10476 "GET / HTTP/1.1" 200 1043
+INFO 2024-04-01 20:49:15,433 autoreload 4076 5820 Watching for file changes with StatReloader
+INFO 2024-04-01 20:49:42,759 autoreload 4076 5820 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\models.py changed, reloading.
+INFO 2024-04-01 20:49:44,127 autoreload 11244 10208 Watching for file changes with StatReloader
+INFO 2024-04-01 20:49:54,151 basehttp 11244 5332 "GET / HTTP/1.1" 200 1043
+ERROR 2024-04-01 20:50:09,162 log 11244 8436 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: homeworkapp_clients
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 44, in create_users_fake
+    client.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: homeworkapp_clients
+ERROR 2024-04-01 20:50:09,236 basehttp 11244 8436 "GET /create_users_fake/ HTTP/1.1" 500 147028
+INFO 2024-04-01 20:53:29,952 autoreload 10008 2796 Watching for file changes with StatReloader
+INFO 2024-04-01 20:53:33,773 basehttp 10008 4904 "GET / HTTP/1.1" 200 1043
+INFO 2024-04-01 20:55:13,113 autoreload 8484 1684 Watching for file changes with StatReloader
+INFO 2024-04-01 20:55:15,332 basehttp 8484 3680 "GET / HTTP/1.1" 200 1043
+WARNING 2024-04-01 20:55:35,534 log 8484 3500 Not Found: /create_user_fake
+WARNING 2024-04-01 20:55:35,536 basehttp 8484 3500 "GET /create_user_fake HTTP/1.1" 404 2647
+ERROR 2024-04-01 20:55:55,513 log 8484 12204 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2024-04-01 20:55:55,652 basehttp 8484 12204 "GET /create_users_fake/ HTTP/1.1" 500 64477
+INFO 2024-04-01 20:58:28,964 autoreload 8484 1684 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 20:58:30,317 autoreload 9004 5968 Watching for file changes with StatReloader
+INFO 2024-04-01 20:58:35,331 basehttp 9004 9192 "GET /create_users_fake/ HTTP/1.1" 200 2
+INFO 2024-04-01 21:30:01,303 autoreload 448 10300 Watching for file changes with StatReloader
+INFO 2024-04-01 21:30:05,655 basehttp 448 7948 "GET / HTTP/1.1" 200 1043
+ERROR 2024-04-01 21:30:17,708 log 448 2880 Internal Server Error: /create_products/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 51, in create_products
+    product.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-04-01 21:30:17,729 basehttp 448 2880 "GET /create_products/ HTTP/1.1" 500 124030
+INFO 2024-04-01 21:30:38,838 basehttp 448 11848 "GET /create_products/ HTTP/1.1" 200 2
+INFO 2024-04-01 22:16:08,746 autoreload 448 10300 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 22:16:11,320 autoreload 9048 1176 Watching for file changes with StatReloader
+INFO 2024-04-01 22:21:06,664 autoreload 9048 1176 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 22:21:08,271 autoreload 9856 9892 Watching for file changes with StatReloader
+INFO 2024-04-01 22:22:26,876 autoreload 9856 9892 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 22:22:28,525 autoreload 2468 7488 Watching for file changes with StatReloader
+INFO 2024-04-01 22:25:20,667 autoreload 2468 7488 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 22:25:22,372 autoreload 11844 11652 Watching for file changes with StatReloader
+INFO 2024-04-01 22:32:24,518 autoreload 11844 11652 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\urls.py changed, reloading.
+INFO 2024-04-01 22:32:25,586 autoreload 2408 5544 Watching for file changes with StatReloader
+INFO 2024-04-01 22:32:29,403 basehttp 2408 9828 "GET / HTTP/1.1" 200 1043
+ERROR 2024-04-01 22:32:35,633 log 2408 10572 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 61, in create_orders
+    total_price=Products.objects.filter(pk=j).first() * Products.objects.filter(pk=j).price())
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'price'
+ERROR 2024-04-01 22:32:35,644 basehttp 2408 10572 "GET /create_orders/ HTTP/1.1" 500 65060
+INFO 2024-04-01 22:34:22,643 autoreload 2408 5544 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-01 22:34:24,121 autoreload 12040 11528 Watching for file changes with StatReloader
+ERROR 2024-04-01 22:34:26,361 log 12040 3604 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 61, in create_orders
+    total_price=Products.objects.filter(pk=j).first() * Products.objects.filter(pk=j).first().price())
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'price'
+ERROR 2024-04-01 22:34:26,430 basehttp 12040 3604 "GET /create_orders/ HTTP/1.1" 500 65229
+INFO 2024-04-02 12:55:02,984 autoreload 3276 9620 Watching for file changes with StatReloader
+INFO 2024-04-02 12:55:09,827 basehttp 3276 8440 "GET / HTTP/1.1" 200 1043
+WARNING 2024-04-02 12:55:11,036 log 3276 8440 Not Found: /favicon.ico
+WARNING 2024-04-02 12:55:11,110 basehttp 3276 8440 "GET /favicon.ico HTTP/1.1" 404 2624
+ERROR 2024-04-02 12:55:15,670 log 3276 11880 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 62, in create_orders
+    pk=j).first().price())
+                  ^^^^^
+AttributeError: 'NoneType' object has no attribute 'price'
+ERROR 2024-04-02 12:55:15,678 basehttp 3276 11880 "GET /create_orders/ HTTP/1.1" 500 64858
+INFO 2024-04-02 12:56:29,713 autoreload 3276 9620 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 12:56:31,211 autoreload 6576 10628 Watching for file changes with StatReloader
+ERROR 2024-04-02 12:56:35,466 log 6576 9324 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 62, in create_orders
+    pk=j).first().price())
+                  ^^^^^^^
+TypeError: 'decimal.Decimal' object is not callable
+ERROR 2024-04-02 12:56:35,588 basehttp 6576 9324 "GET /create_orders/ HTTP/1.1" 500 64924
+INFO 2024-04-02 13:00:58,097 autoreload 6576 10628 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:00:59,517 autoreload 12228 7444 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:01:03,245 log 12228 3724 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 61, in create_orders
+    total_price=Products.objects.filter(pk=j).first() * Products.objects.filter(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for *: 'Products' and 'decimal.Decimal'
+ERROR 2024-04-02 13:01:03,296 basehttp 12228 3724 "GET /create_orders/ HTTP/1.1" 500 65281
+INFO 2024-04-02 13:01:47,306 autoreload 12228 7444 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:01:48,524 autoreload 5400 12148 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:01:52,044 log 5400 8548 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 59, in create_orders
+    order = Orders(customer=Clients.objects.filter(pk=i).first(),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+ERROR 2024-04-02 13:01:52,067 basehttp 5400 8548 "GET /create_orders/ HTTP/1.1" 500 76441
+INFO 2024-04-02 13:18:29,899 autoreload 5400 12148 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:18:31,285 autoreload 8424 2544 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:18:38,446 log 8424 9048 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 60, in create_orders
+    products=Products.objects.filter(pk=j).set(),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'set'
+ERROR 2024-04-02 13:18:38,458 basehttp 8424 9048 "GET /create_orders/ HTTP/1.1" 500 65312
+INFO 2024-04-02 13:18:55,750 autoreload 8424 2544 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:18:57,293 autoreload 11284 2516 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:19:02,101 log 11284 912 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 60, in create_orders
+    products=Products.objects.filter(pk=j).add(),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'add'
+ERROR 2024-04-02 13:19:02,109 basehttp 11284 912 "GET /create_orders/ HTTP/1.1" 500 65312
+INFO 2024-04-02 13:19:33,521 autoreload 11284 2516 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:19:34,704 autoreload 3984 2784 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:19:38,016 log 3984 3428 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 59, in create_orders
+    order = Orders(customer=Clients.objects.filter(pk=i).first(),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+ERROR 2024-04-02 13:19:38,033 basehttp 3984 3428 "GET /create_orders/ HTTP/1.1" 500 76490
+INFO 2024-04-02 13:20:33,621 autoreload 3984 2784 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:20:34,978 autoreload 5972 7904 Watching for file changes with StatReloader
+INFO 2024-04-02 13:20:55,388 autoreload 5972 7904 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:20:56,544 autoreload 904 8608 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:21:00,798 log 904 504 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 59, in create_orders
+    prod = Products.objects.filter(pk=j).set()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'set'
+ERROR 2024-04-02 13:21:00,811 basehttp 904 504 "GET /create_orders/ HTTP/1.1" 500 65596
+INFO 2024-04-02 13:23:07,664 autoreload 904 8608 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:23:09,201 autoreload 6016 12028 Watching for file changes with StatReloader
+INFO 2024-04-02 13:26:13,860 autoreload 6016 12028 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:26:16,561 autoreload 852 1812 Watching for file changes with StatReloader
+INFO 2024-04-02 13:29:50,198 autoreload 852 1812 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:29:51,701 autoreload 8804 7516 Watching for file changes with StatReloader
+INFO 2024-04-02 13:30:02,661 autoreload 8804 7516 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:30:04,121 autoreload 11744 4848 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:30:09,664 log 11744 6092 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 65, in create_orders
+    tp *= prod.price()
+          ^^^^^^^^^^^^
+TypeError: 'decimal.Decimal' object is not callable
+ERROR 2024-04-02 13:30:09,670 basehttp 11744 6092 "GET /create_orders/ HTTP/1.1" 500 65952
+INFO 2024-04-02 13:30:46,671 autoreload 11744 4848 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:30:47,844 autoreload 9676 1476 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:30:50,121 log 9676 3752 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 65, in create_orders
+    tp += prod.price()
+          ^^^^^^^^^^^^
+TypeError: 'decimal.Decimal' object is not callable
+ERROR 2024-04-02 13:30:50,158 basehttp 9676 3752 "GET /create_orders/ HTTP/1.1" 500 65952
+INFO 2024-04-02 13:33:34,379 autoreload 9676 1476 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:33:36,037 autoreload 3604 11008 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:33:42,808 log 3604 9776 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 66, in create_orders
+    order = Orders(customer=custr,
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+ERROR 2024-04-02 13:33:42,818 basehttp 3604 9776 "GET /create_orders/ HTTP/1.1" 500 76882
+INFO 2024-04-02 13:34:34,116 autoreload 3604 11008 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:34:35,326 autoreload 8708 1052 Watching for file changes with StatReloader
+INFO 2024-04-02 13:35:34,333 autoreload 8708 1052 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:35:36,132 autoreload 10584 12068 Watching for file changes with StatReloader
+INFO 2024-04-02 13:35:39,414 autoreload 10584 12068 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:44:49,640 autoreload 4556 11220 Watching for file changes with StatReloader
+INFO 2024-04-02 13:45:03,505 basehttp 4556 6328 "GET / HTTP/1.1" 200 1043
+ERROR 2024-04-02 13:45:16,249 log 4556 2252 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 66, in create_orders
+    order = Orders(customer=custr,
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+ERROR 2024-04-02 13:45:16,257 basehttp 4556 2252 "GET /create_orders/ HTTP/1.1" 500 77188
+INFO 2024-04-02 13:51:17,142 autoreload 4556 11220 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:51:18,467 autoreload 5924 9496 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:51:29,199 log 5924 6176 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 57, in create_orders
+    order = Order.objects.create(client=client, ordered_date=timezone.now())
+            ^^^^^
+NameError: name 'Order' is not defined
+ERROR 2024-04-02 13:51:29,368 basehttp 5924 6176 "GET /create_orders/ HTTP/1.1" 500 65161
+INFO 2024-04-02 13:52:31,636 autoreload 5924 9496 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:52:32,743 autoreload 1988 8852 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:52:41,508 log 1988 7584 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 64, in create_orders
+    order.products.add(prod)
+    ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1069, in __init__
+    raise ValueError(
+ValueError: "<Orders: Orders object (None)>" needs to have a value for field "id" before this many-to-many relationship can be used.
+ERROR 2024-04-02 13:52:41,518 basehttp 1988 7584 "GET /create_orders/ HTTP/1.1" 500 75879
+INFO 2024-04-02 13:55:00,318 autoreload 1988 8852 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:55:01,602 autoreload 10484 3000 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:55:04,249 log 10484 7940 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 63, in create_orders
+    order.products.add(prod)
+    ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1069, in __init__
+    raise ValueError(
+ValueError: "<Orders: Orders object (None)>" needs to have a value for field "id" before this many-to-many relationship can be used.
+ERROR 2024-04-02 13:55:04,280 basehttp 10484 7940 "GET /create_orders/ HTTP/1.1" 500 75728
+INFO 2024-04-02 13:58:00,773 autoreload 10484 3000 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 13:58:02,066 autoreload 6384 11868 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:58:05,030 log 6384 10452 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 58, in create_orders
+    order = Orders.objects.create(customer=Clients.objects.filter(pk=i).first())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 13:58:05,081 basehttp 6384 10452 "GET /create_orders/ HTTP/1.1" 500 155102
+INFO 2024-04-02 13:59:10,534 autoreload 6384 11868 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\models.py changed, reloading.
+INFO 2024-04-02 13:59:11,688 autoreload 2248 3412 Watching for file changes with StatReloader
+ERROR 2024-04-02 13:59:17,859 log 2248 8028 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 58, in create_orders
+    order = Orders.objects.create(customer=Clients.objects.filter(pk=i).first())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 13:59:17,922 basehttp 2248 8028 "GET /create_orders/ HTTP/1.1" 500 155102
+INFO 2024-04-02 13:59:46,410 autoreload 2248 3412 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\models.py changed, reloading.
+INFO 2024-04-02 13:59:47,646 autoreload 5520 1464 Watching for file changes with StatReloader
+INFO 2024-04-02 14:03:55,778 autoreload 5520 1464 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\models.py changed, reloading.
+INFO 2024-04-02 14:03:57,293 autoreload 3164 5056 Watching for file changes with StatReloader
+ERROR 2024-04-02 14:04:05,485 log 3164 900 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 58, in create_orders
+    order = Orders.objects.create(customer=Clients.objects.filter(pk=i).first())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 14:04:05,563 basehttp 3164 900 "GET /create_orders/ HTTP/1.1" 500 155102
+INFO 2024-04-02 14:05:04,938 autoreload 3164 5056 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\models.py changed, reloading.
+INFO 2024-04-02 14:05:06,728 autoreload 6252 11344 Watching for file changes with StatReloader
+INFO 2024-04-02 14:07:15,030 autoreload 6252 11344 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:07:16,602 autoreload 9008 7800 Watching for file changes with StatReloader
+ERROR 2024-04-02 14:07:20,641 log 9008 9164 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 63, in create_orders
+    order.total_price.add(tp)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'add'
+ERROR 2024-04-02 14:07:20,697 basehttp 9008 9164 "GET /create_orders/ HTTP/1.1" 500 65688
+INFO 2024-04-02 14:08:17,771 autoreload 9008 7800 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:08:19,030 autoreload 4692 11116 Watching for file changes with StatReloader
+ERROR 2024-04-02 14:08:22,415 log 4692 9648 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 64, in create_orders
+    order.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.customer_id
+ERROR 2024-04-02 14:08:22,476 basehttp 4692 9648 "GET /create_orders/ HTTP/1.1" 500 146596
+INFO 2024-04-02 14:10:51,867 autoreload 4692 11116 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:10:53,086 autoreload 1352 10568 Watching for file changes with StatReloader
+ERROR 2024-04-02 14:10:57,964 log 1352 9172 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 64, in create_orders
+    order.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.customer_id
+ERROR 2024-04-02 14:10:58,097 basehttp 1352 9172 "GET /create_orders/ HTTP/1.1" 500 146757
+INFO 2024-04-02 14:11:44,691 autoreload 1352 10568 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:11:45,766 autoreload 1688 2680 Watching for file changes with StatReloader
+ERROR 2024-04-02 14:11:49,465 log 1688 6196 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 63, in create_orders
+    order = Orders(customer=cust, total_price=tp, products=prod)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+ERROR 2024-04-02 14:11:49,476 basehttp 1688 6196 "GET /create_orders/ HTTP/1.1" 500 76750
+INFO 2024-04-02 14:14:18,942 autoreload 1688 2680 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:14:20,576 autoreload 4600 8880 Watching for file changes with StatReloader
+INFO 2024-04-02 14:16:13,940 autoreload 4600 8880 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:16:15,442 autoreload 6444 10848 Watching for file changes with StatReloader
+INFO 2024-04-02 14:17:25,249 autoreload 6444 10848 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 14:17:26,277 autoreload 6404 9404 Watching for file changes with StatReloader
+INFO 2024-04-02 14:17:33,172 basehttp 6404 9352 "GET / HTTP/1.1" 200 1043
+ERROR 2024-04-02 14:17:52,760 log 6404 6744 Internal Server Error: /create_orders/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 57, in create_orders
+    order = Orders(customer=Clients.objects.filter(pk=1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<QuerySet [<Clients: Clients object (1)>]>": "Orders.customer" must be a "Clients" instance.
+ERROR 2024-04-02 14:17:52,780 basehttp 6404 6744 "GET /create_orders/ HTTP/1.1" 500 75845
+INFO 2024-04-02 19:38:37,240 autoreload 988 2596 Watching for file changes with StatReloader
+INFO 2024-04-02 19:39:04,691 autoreload 988 2596 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\urls.py changed, reloading.
+INFO 2024-04-02 19:39:06,214 autoreload 8804 10296 Watching for file changes with StatReloader
+INFO 2024-04-02 19:39:10,899 basehttp 8804 6588 "GET / HTTP/1.1" 200 1043
+WARNING 2024-04-02 19:39:11,992 log 8804 6588 Not Found: /favicon.ico
+WARNING 2024-04-02 19:39:11,998 basehttp 8804 6588 "GET /favicon.ico HTTP/1.1" 404 2632
+ERROR 2024-04-02 19:39:21,830 log 8804 11672 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 50, in create_users_fake
+    order.products.add(prod)
+    ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 650, in __get__
+    return self.related_manager_cls(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1069, in __init__
+    raise ValueError(
+ValueError: "<Orders: Orders object (None)>" needs to have a value for field "id" before this many-to-many relationship can be used.
+ERROR 2024-04-02 19:39:21,849 basehttp 8804 11672 "GET /create_users_fake/ HTTP/1.1" 500 76174
+INFO 2024-04-02 19:40:35,358 autoreload 8804 10296 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 19:40:36,948 autoreload 4724 6024 Watching for file changes with StatReloader
+ERROR 2024-04-02 19:40:40,583 log 4724 11120 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 49, in create_users_fake
+    order = Orders(customer=client.id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "20": "Orders.customer" must be a "Clients" instance.
+ERROR 2024-04-02 19:40:40,673 basehttp 4724 11120 "GET /create_users_fake/ HTTP/1.1" 500 76426
+INFO 2024-04-02 19:41:10,085 autoreload 4724 6024 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 19:41:11,288 autoreload 9752 10224 Watching for file changes with StatReloader
+ERROR 2024-04-02 19:41:15,284 log 9752 10252 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 50, in create_users_fake
+    order.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 19:41:15,358 basehttp 9752 10252 "GET /create_users_fake/ HTTP/1.1" 500 147049
+INFO 2024-04-02 19:43:42,387 autoreload 9752 10224 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 19:43:43,836 autoreload 1508 3556 Watching for file changes with StatReloader
+ERROR 2024-04-02 19:43:47,348 log 1508 10044 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 52, in create_users_fake
+    order.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 19:43:47,383 basehttp 1508 10044 "GET /create_users_fake/ HTTP/1.1" 500 147149
+INFO 2024-04-02 19:46:04,250 autoreload 1508 3556 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 19:46:05,732 autoreload 10324 11652 Watching for file changes with StatReloader
+ERROR 2024-04-02 19:46:08,611 log 10324 648 Internal Server Error: /create_users_fake/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py", line 52, in create_users_fake
+    order.save()
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\homework_django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homeworkapp_orders.total_price
+ERROR 2024-04-02 19:46:08,754 basehttp 10324 648 "GET /create_users_fake/ HTTP/1.1" 500 147185
+INFO 2024-04-02 19:47:38,696 autoreload 10324 11652 C:\Users\Lenovo\PycharmProjects\homework_django\my_project\homeworkapp\views.py changed, reloading.
+INFO 2024-04-02 19:54:28,536 autoreload 7584 11596 Watching for file changes with StatReloader
+INFO 2024-04-02 19:54:30,832 basehttp 7584 1660 "GET / HTTP/1.1" 200 1043
+INFO 2024-04-02 19:54:57,581 basehttp 7584 12064 "GET /create_users_fake/ HTTP/1.1" 200 2
