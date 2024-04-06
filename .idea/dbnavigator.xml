@@ -24,12 +24,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="a66448d1-e0d5-461d-9124-4de027f3148d" object-ref="schemas/main/tables/homeworkapp_clients" />
-      <object connection-id="a66448d1-e0d5-461d-9124-4de027f3148d" object-ref="schemas/main/tables/homeworkapp_products" />
-      <object connection-id="a66448d1-e0d5-461d-9124-4de027f3148d" object-ref="schemas/main/tables/homeworkapp_orders" />
-      <object connection-id="a66448d1-e0d5-461d-9124-4de027f3148d" object-ref="schemas/main/tables/homeworkapp_orders_products" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a66448d1-e0d5-461d-9124-4de027f3148d" />

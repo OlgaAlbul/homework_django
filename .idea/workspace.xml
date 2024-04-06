@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="997b4736-e66b-4176-8623-83d2acd8b0ec" name="Changes" comment="First task of homework app complete">
+    <list default="true" id="997b4736-e66b-4176-8623-83d2acd8b0ec" name="Changes" comment="Second task of homework app complete">
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/db.sqlite3" afterDir="false" />
@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/my_project/homeworkapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/homeworkapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_project/log/django.log" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/log/django.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_project/log/hwapp.log" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/log/hwapp.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/my_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/my_project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
@@ -69,11 +72,28 @@
       <option name="project" value="LOCAL" />
       <updated>1711538974388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second task of homework app complete">
+      <option name="closed" value="true" />
+      <created>1712069956313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712069956313</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second task of homework app complete">
+      <option name="closed" value="true" />
+      <created>1712069987275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712069987275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First task of homework app complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="First task of homework app complete" />
+    <MESSAGE value="Second task of homework app complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second task of homework app complete" />
   </component>
 </project>

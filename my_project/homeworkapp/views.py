@@ -1,6 +1,6 @@
 from random import choice
 
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from django.http import HttpResponse
 import logging
@@ -10,50 +10,53 @@ logger = logging.getLogger(__name__)
 
 
 def main(request):
+    context = {
+        'title': 'Главная',
+        'message': 'Приветствуем вас на странице нашего магазина!'
+    }
     logger.info("Главная страница загружена успешно")
-    text = """<h1>Главная страница</h1>
-            <h2>Приветствуем вас на странице нашего магазина!</h2>
-            <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности 
-            создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий 
-            с учётом комплекса системы массового участия. Лишь некоторые особенности внутренней политики
-            могут быть описаны максимально подробно. Каждый из нас понимает очевидную вещь: сложившаяся
-            структура организации является качественно новой ступенью новых предложений!</p>"""
-    return HttpResponse(text)
+    return render(request, 'homeworkapp/main.html', context)
 
 
 def about(request):
+    context = {
+        'title': 'О нас',
+        'message': 'На этой странице вы можете узнать нас немного лучше'
+    }
     logger.info("Страница 'О нас' загружена успешно")
-    text = """<h1>О нас</h1>
-            <h2>На этой странице вы можете узнать нас немного лучше</h2>
-            <p>Разнообразный и богатый опыт говорит нам, что убеждённость некоторых оппонентов напрямую 
-            зависит от новых принципов формирования материально-технической и кадровой базы. Как уже 
-            неоднократно упомянуто, базовые сценарии поведения пользователей представляют собой не что 
-            иное, как квинтэссенцию победы маркетинга над разумом и должны быть заблокированы в рамках 
-            своих собственных рациональных ограничений. Но базовые сценарии поведения пользователей 
-            функционально разнесены на независимые элементы. Значимость этих проблем настолько очевидна, 
-            что перспективное планирование требует от нас анализа приоретизации разума над эмоциями. 
-            В рамках спецификации современных стандартов, базовые сценарии поведения пользователей освещают 
-            чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, в 
-            равной степени предоставлены сами себе. А ещё ключевые особенности структуры проекта являются 
-            только методом политического участия и своевременно верифицированы.</p>"""
-    return HttpResponse(text)
+    return render(request, 'homeworkapp/about.html', context)
 
 
-def create_users_fake(request):
-    for i in range(1, 10):
-        client = Clients(name=f'Name{i}', email=f'name{i}@mail.ru',
-                         phone=f'{11111111111}*{i}', address=f'Street{i}, home {i*2}')
-        client.save()
-        for j in range(1, 5):
-            ts = 0
-            prod = Products.objects.filter(pk=j).first()
-            ts += prod.price
-            order = Orders(customer=client, total_price=ts)
-            order.save()
-            order.products.add(prod)
-            order.save()
+def clientorders(request, cl_id):
+    client = get_object_or_404(Clients, id=cl_id)
+    # client = Clients.objects.filter(pk=cl_id)
+    ord = {}
+    # orders = Orders.objects.prefetch_related('products').select_related('order_prods').filter(customer_id=cl_id)
+    for order in Orders.objects.all():
+        if order.customer == client:
+            ord[order.id] = order.date_ordered
 
-    return HttpResponse('Ok')
+    context = {'title': 'Заказы',
+               'client': client.name,
+               'orders': ord
+               }
+    return render(request, 'homeworkapp/clientorders.html', context)
+
+# def create_users_fake(request):
+#     for i in range(1, 10):
+#         client = Clients(name=f'Name{i}', email=f'name{i}@mail.ru',
+#                          phone=f'{11111111111}*{i}', address=f'Street{i}, home {i*2}')
+#         client.save()
+#         for j in range(1, 5):
+#             ts = 0
+#             prod = Products.objects.filter(pk=j).first()
+#             ts += prod.price
+#             order = Orders(customer=client, total_price=ts)
+#             order.save()
+#             order.products.add(prod)
+#             order.save()
+#
+#     return HttpResponse('Ok')
 
 # def create_products(request):
 #     for i in range(1, 5):
@@ -61,5 +64,3 @@ def create_users_fake(request):
 #                            price=i*1000, count=i)
 #         product.save()
 #     return HttpResponse('Ok')
-
-
