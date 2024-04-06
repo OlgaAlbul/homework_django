@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+    <h1>{{ client }}</h1>
+        <ul>
+        {% for key, value in orders.items %}
+            <li>Заказ номер:{{ key }} - {{ value }}</li>
+        {% endfor %}
+        </ul>
+
+{% endblock %}
